@@ -3,43 +3,44 @@
 *  Created On : Sat Jan 23 2021
 *  File : header.styles.scss
 *******************************************/
- .header {
-    height: 120px;
-    width: 1fr;
+
+
+
+.header {
+  height: 120px;
+  width: 1fr;
+  display: flex;
+  justify-content: space-between;
+  margin: 25px;
+  background-color: #34444C;
+  
+  .logo-container {
     display: flex;
-    justify-content: space-between;
-    margin: 25px;
-    background-color: #34444C;
-  
-    .logo-container {
-      display: flex;
-      justify-content: center;
-      height: 100%;
-      width: 150px;
-      padding: 25px;
-    }
-
-    .logo{
-      width:155px;
-      height:125px;
-      position: relative;
-      top:-50%;
-    }
-  
-    .options {
-      width: 50%;
-      height: 100%;
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-end;
-
-      
-  
-      .option {
-        padding: 10px 15px;
-        cursor:pointer;
-        color: #f1f6f8;
-      }
-    }
+    justify-content: center;
+    height: 100%;
+    width: 150px;
+    padding: 25px;
   }
   
+  .logo{
+    width:155px;
+    height:125px;
+    position: relative;
+    top:-50%;
+  }
+  
+  .options {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+    
+    .option {
+      padding: 10px 15px;
+      cursor:pointer;
+      color: #f1f6f8;
+    }
+  }
+}

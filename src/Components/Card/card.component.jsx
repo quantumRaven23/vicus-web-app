@@ -16,7 +16,7 @@ import {MaterialUses} from '../material-uses/material-uses.component';
 
 //Misc
 
-export const Card = ({id,imageurl,name,description,app}) =>(
+export const Card = ({id,imageurl,name,description,application}) =>(
     <div className='card'>
         <img className='card-image'
             alt={name}
@@ -27,7 +27,7 @@ export const Card = ({id,imageurl,name,description,app}) =>(
             <div className='card-content'>{description}</div>
         </div>
         <div className='card-bottom'>
-            <MaterialUses usedFor={app}/>
+            <MaterialUses usedFor={application}/>
         </div>
 
     </div>

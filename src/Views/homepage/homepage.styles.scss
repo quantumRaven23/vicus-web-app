@@ -3,9 +3,31 @@
 *  Created On : Fri Jan 22 2021
 *  File : homepage.styles.scss
 *******************************************/
+
 .homepage{
+
+}
+
+.card-list-container{
+    display: grid;
+    grid-template-columns: 1fr 1050px 1fr;
+    background-color: #F1f6f8;
+
+}
+
+.text-bundle{
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px 80px;
+    color: #f1f6f8;
+    background-color: #34444C;
+    height: 300px;
+}
+
+.text-item{
+    width:200px;
+    height:auto;
+    &   p{
+        width: 150px;
+    }
 }

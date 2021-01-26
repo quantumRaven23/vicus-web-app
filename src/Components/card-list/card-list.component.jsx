@@ -36,7 +36,7 @@ class CardList extends React.Component{
             <div className='card-list'>
                 {
                     items
-                    .filter((items,idx)=>idx<3)
+                    .filter((items,idx)=>idx<6)
                     .map(({id,...otherCardListProps})=>(
                         <Card key={id} {...otherCardListProps}/>
                     ))
