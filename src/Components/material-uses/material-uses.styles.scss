@@ -1,0 +1,43 @@
+/******************************************
+*  Author : quantumRaven23   
+*  Created On : Sun Jan 24 2021
+*  File : material-uses.styles.scss
+*******************************************/
+
+.dots{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dot-content{
+    display: flex;
+    flex-direction: column;
+    color: #34444C; 
+}
+
+.dot-black{
+    height: 25px;
+    width: 25px;
+    background-color:#34444C;
+    border-radius: 50%;
+    display: inline-block;
+    border: solid #34444C;
+    border-width: 1px;
+    align-self: center;
+}
+
+.dot-white{
+    height: 25px;
+    width: 25px;
+    background-color: #D9E1E2;
+    border-radius: 50%;
+    display: inline-block;
+    border: solid #34444C;
+    border-width: 1px;
+    align-self: center;
+}
+
+.dot-text{
+    align-self: left;
+    font-size: small;
+}
