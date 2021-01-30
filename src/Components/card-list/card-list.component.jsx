@@ -23,7 +23,7 @@ import './card-list.styles.scss';
 
 class CardList extends React.Component{
     constructor(props){
-        super(props)
+        super(props);
 
         this.state={
             items: ITEM_DATA

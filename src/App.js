@@ -12,7 +12,6 @@ import {Switch,Route} from 'react-router-dom';
 import Header from './Components/Header/header.component';
 
 //Views
-import Catalogo from './Views/catalogo/catalogo.view';
 import HomePage from './Views/homepage/homepage.view';
 
 //Styles
@@ -23,11 +22,12 @@ import './App.css';
 function App() {
   return (
     <div>
-        <Header/>
+        <div className='parallax'>
+          <Header/>
+        </div>
         <Switch>
           <Route exact path='/' component={HomePage}/>
-          <Route path='/catalogo' component={Catalogo}/>
-          {/*
+          {/* <Route path='/catalogo' />
           <Route path='/tuproyecto'/>
           <Route path='/contacto'/>
           <Route path='Proyectos'/>

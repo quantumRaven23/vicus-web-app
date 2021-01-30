@@ -10,5 +10,23 @@ a{
 body{
   min-width: 700px;
   font-family: 'Cabin', sans-serif;
+  overflow: hidden;
+  overflow-y:scroll;
 }
 
+.parallax {
+  /* The image used */
+  
+  background-image:url('./Assets/pexels-mike-114820.jpg');
+
+  /* Set a specific height */
+  min-height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  overflow: hidden;
+}

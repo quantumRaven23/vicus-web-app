@@ -25,7 +25,7 @@ const Header =()=>{
                 <img alt='Vicus Logo' className='logo' src={logo}/>
             </Link>
             <div className='options'>
-                <Link className='option' to='/catalogo'>
+                <Link className='option' to='/'>
                     CATALOGO
                 </Link>
                 <Link className='option' to='/'>
