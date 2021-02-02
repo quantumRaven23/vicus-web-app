@@ -8,8 +8,9 @@
 import React from 'react';
 
 //Components
-import CardList from '../../Components/card-list/card-list.component';
-import MarkdownText from '../../Components/markdown-text/markdown-text.component';
+import CardList from '../../Components/CardList/card-list.component';
+import MarkdownText from '../../Components/MarkdownText/markdown-text.component';
+import EmailForm from '../../Components/EmailForm/email-form.component';
 
 //Styles
 import './homepage.styles.scss'
@@ -28,6 +29,9 @@ const HomePage =()=>(
         </div>
         <div className='card-list-container'>
             <CardList className='cardlist'/>
+        </div>
+        <div className='email-form-container'>
+            <EmailForm/>
         </div>
     </div>
 );

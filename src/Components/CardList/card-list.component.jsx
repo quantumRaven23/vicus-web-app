@@ -10,7 +10,7 @@
 import React from 'react';
 
 //Components
-import {Card} from '../Card/card.component.jsx'
+import {Card} from '../card/card.component.jsx'
 
 //Data
 import ITEM_DATA from './item.data';
@@ -36,13 +36,11 @@ class CardList extends React.Component{
             <div className='card-list'>
                 {
                     items
-                    .filter((items,idx)=>idx<6)
                     .map(({id,...otherCardListProps})=>(
                         <Card key={id} {...otherCardListProps}/>
                     ))
                 }
             </div>
-
         );
     }
 }

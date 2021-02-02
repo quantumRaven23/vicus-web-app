@@ -27,12 +27,6 @@ function App() {
         </div>
         <Switch>
           <Route exact path='/' component={HomePage}/>
-          {/* <Route path='/catalogo' />
-          <Route path='/tuproyecto'/>
-          <Route path='/contacto'/>
-          <Route path='Proyectos'/>
-          <Route path='Conocenos'/>
-          */}
         </Switch>
     </div>
   );

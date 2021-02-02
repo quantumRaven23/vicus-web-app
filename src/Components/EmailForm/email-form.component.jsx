@@ -8,41 +8,63 @@
 import React from 'react';
 
 //Components
+import FormInput from '../form-input/form-input.component';
+import TextInput from '../text-input/text-input.component';
+import CustomButton from '../custom-button/custom-button.component';
+
 //Styles
+import './email-form.styles.scss';
+
 //Misc
-
-
+import emailjs from 'emailjs-com';
 
 class EmailForm extends React.Component{
     constructor(props){
         super(props);
 
         this.state={
-
+            nombre:'',
+            email:'',
+            contact:'',
+            message:''
         }
     }
 
-    handleSubmit =()=>{
-
+    handleSubmit =async event=>{
+        event.preventDefault();
+        try{
+            emailjs.sendForm('', '', event.target, '')
+            .then((result)=>{
+                console.log(result.text);
+            })
+            this.setState({email:'',contact:'',message:''})
+        }catch(error){
+            console.log(error);
+        }
     }
 
     handleChange = event => {
         const { value , name } = event.target;
 
         this.setState({ [name] : value });
+
     };
 
     render(){
 
         return(
-            <div>
-                <h2>{'Cuentanos\ntu proyecto.'}</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                <form>
+            <div className='email-form'>
+                <form onSubmit={this.handleSubmit}>
                     <FormInput
-                        name='correo'
+                        name='name'
+                        type='text/plain'
+                        handleChange={this.handleChange}
+                        value={this.state.name}
+                        label='Nombre'
+                        required
+                    />
+                    <FormInput
+                        name='email'
                         type='email'
                         handleChange={this.handleChange}
                         value={this.state.email}
@@ -50,21 +72,26 @@ class EmailForm extends React.Component{
                         required
                     />
                     <FormInput
-                        name='contacto'
+                        name='contact'
                         type='text/plain'
                         handleChange={this.handleChange}
-                        value={this.state.email}
+                        value={this.state.contact}
                         label='Contacto'
                         required
                     />
-                    <FormInput
-                        name='comentario'
+                    <TextInput
+                        name='message'
                         type='text/plain'
                         handleChange={this.handleChange}
-                        value={this.state.email}
-                        label='En que te podemos ayudar'
+                        value={this.state.message}
+                        label='En que te podemos ayudar?'
                         required
                     />
+                    <div className='button-container'>
+                        <CustomButton >
+                            Enviar
+                        </CustomButton>
+                    </div>
                 </form>
             </div>  
         );

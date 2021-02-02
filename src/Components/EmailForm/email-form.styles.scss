@@ -3,3 +3,26 @@
 *  Created On : Sat Jan 30 2021
 *  File : email-form.styles.scss
 *******************************************/
+
+.email-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 900px;
+    h2{
+        margin:0;
+    }
+
+    form{
+        margin-left: auto;
+        margin-right: auto;
+        width:70%;
+    }
+
+    .button-container{
+        width:80%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}
