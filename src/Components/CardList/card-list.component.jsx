@@ -36,9 +36,8 @@ class CardList extends React.Component{
     }
 
     handleChange=(e)=>{
-        var filterCategories = this.state.filterCategories;
-        filterCategories[0] = e.target.value;
-        this.setState({'filterCategories':filterCategories});
+        
+        this.setState({'filterCategories':[e.target.value]});
     }
 
     handleFilter=(items)=>{
