@@ -6,8 +6,7 @@
  *******************************************/
 //React and Libraries
 import React from 'react';
-import {Link} from 'react-router-dom';
-import {useMediaQuery} from 'react-responsive';
+// import {useMediaQuery} from 'react-responsive';
 
 //Components
 
@@ -18,26 +17,17 @@ import './header.styles.scss';
 import logo from '../../Assets/vicus_logo_alt.png';
 
 const Header =()=>{
-    const isDesktopOrLaptop = useMediaQuery({query:'(min-device-width:1224px)'})
+    
     return(
         <div className='header'>
-            <Link to='/' className='logo-container'>
+            <a href='/' className='logo-container'>
                 <img alt='Vicus Logo' className='logo' src={logo}/>
-            </Link>
+            </a>
             <div className='options'>
-                <Link className='option' to='/'>
-                    CATALOGO
-                </Link>
-                <Link className='option' to='/'>
-                    TU PROYECTO
-                </Link>
-                <Link className='option' to='/'>
-                    PROYECTOS
-                </Link>
-                <Link className='option' to='/'>
-                    CONOCENOS
-                </Link>
-
+                <a className='option' href='#catalogo'> CATALOGO</a>
+                <a className='option' href='#tuproyecto'>TU PROYECTO</a>
+                <a className='option' href='#tuproyecto'> PROYECTOS</a>
+                <a className='option' href='#conocenos'> CONOCENOS</a>
             </div>
         </div>
     );

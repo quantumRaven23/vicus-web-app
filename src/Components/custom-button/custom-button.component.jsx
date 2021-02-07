@@ -12,13 +12,13 @@ import React from 'react';
 import './custom-button.styles.scss'
 //Misc
 
-const CustomButton=({children,...otherProps})=>(
-    <button 
-        className='custom-button' 
-        {...otherProps}
-    >
-        {children}
-    </button>
+const CustomButton=({children,isLight,...otherProps})=>(
+        <button 
+            className={`custom-button${isLight ? '-light':'-dark'}`} 
+            {...otherProps}
+        >
+            {children}
+        </button>
 );
 
 export default CustomButton;

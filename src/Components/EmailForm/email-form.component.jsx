@@ -17,6 +17,7 @@ import './email-form.styles.scss';
 
 //Misc
 import emailjs from 'emailjs-com';
+import {Confirm,Notify} from 'notiflix';
 
 class EmailForm extends React.Component{
     constructor(props){
@@ -32,15 +33,34 @@ class EmailForm extends React.Component{
 
     handleSubmit =async event=>{
         event.preventDefault();
-        try{
-            emailjs.sendForm('', '', event.target, '')
-            .then((result)=>{
-                console.log(result.text);
-            })
-            this.setState({email:'',contact:'',message:''})
-        }catch(error){
-            console.log(error);
-        }
+        Confirm.Show(
+            'Seguro que quieres continuar?',
+            'El correo sera enviado a nuestros ejecutivos al confirmar.',
+            'Si',
+            'No',
+            ()=>{
+                console.log('User Pressed Yes')
+                try{
+                    emailjs.sendForm('service_52b54kw', 'template_m9g5uwg', event.target, 'user_F1XYfaRSVMCsu1itKFJzn')
+                    .then((result)=>{
+                        result.text==='OK' ? 
+                        Notify.Success('Tu correo fue enviado!') 
+                        :
+                        Notify.Failure('Algo salio mal. Vuelve a intentar despues.')
+                    })
+                    this.setState({email:'',contact:'',message:''})
+                }catch(error){
+                    console.log(error);
+                }
+            },
+            ()=>{
+                console.log('User Pressed No')
+            },
+            { 
+                titleColor:'#374747', 
+                okButtonBackground:'#374747',
+            }
+        );
     }
 
     handleChange = event => {
@@ -53,7 +73,7 @@ class EmailForm extends React.Component{
     render(){
 
         return(
-            <div className='email-form'>
+            <div className='email-form' id='tuproyecto'>
                 <form onSubmit={this.handleSubmit}>
                     <FormInput
                         name='name'
@@ -76,7 +96,7 @@ class EmailForm extends React.Component{
                         type='text/plain'
                         handleChange={this.handleChange}
                         value={this.state.contact}
-                        label='Contacto'
+                        label='Numero de Telefono/ Contacto'
                         required
                     />
                     <TextInput
@@ -88,7 +108,7 @@ class EmailForm extends React.Component{
                         required
                     />
                     <div className='button-container'>
-                        <CustomButton >
+                        <CustomButton isLight>
                             Enviar
                         </CustomButton>
                     </div>

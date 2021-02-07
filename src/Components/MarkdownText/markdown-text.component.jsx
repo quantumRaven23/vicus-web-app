@@ -13,7 +13,7 @@ import React from 'react';
 
 const MarkdownText=()=>{
     return(
-        <div className='text-bundle'>
+        <div className='text-bundle' id='conocenos'>
             <div className='text-item'>
                 <h3>no hassle</h3>  
                 <p>Lorem ipsum dolor sit
