@@ -3,19 +3,34 @@
 *  Created On : Fri Jan 22 2021
 *  File : homepage.styles.scss
 *******************************************/
+// Primary Colors
+$vicus-primary-1:#374747;
+$vicus-primary-2:#242d2d;
+$vicus-primary-3:#34444C;
+$vicus-primary-4:#084f6f;
+$vicus-primary-5:#514E47;
+$vicus-primary-6:#3E3F24;
 
-.homepage{
+//Secondary Colors
+$vicus-secondary-1:#D9E1E2;
+$vicus-secondary-2:#ECF4F8;
+$vicus-secondary-3:#F1F1F1;
+$vicus-secondary-4:#F1f6f8;
 
-}
 
 .card-list-container{
     display: flex;
     background-color: #F1f6f8;
-
 }
 
+.filter-button-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .text-bundle{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     color: #f1f6f8;
@@ -23,33 +38,49 @@
     height: 300px;
 }
 
+.mobile{
+    height: 570px;
+    font-size: 20px;
+
+    .text-item{
+        width:300px;
+        height:auto;
+        align-self: center;
+        p{
+            width: 200px;
+        }
+        
+    }
+}
+
 .text-item{
     width:200px;
     height:auto;
-    &   p{
+    align-self: center;
+    p{
         width: 150px;
     }
 }
 
 
-.motto{
+.md-2{
     margin: 0%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-family:'Merriweather', serif;
     white-space: pre-wrap;
-    background-color: #F1f6f8;
+    background-color: $vicus-secondary-4;
 
     h1{
         position: relative;
         top: -85px; left:50px;
         font-size: 100px;
-        margin: 0%;
-        color: #514E47;
+        margin: 0;
+        color: $vicus-primary-5;
     }
 
     p{
-        color:#242d2d;
+        color:$vicus-primary-2;
         position: relative;
         height:100px;
         top: 150px; left: -100px;
@@ -58,9 +89,65 @@
 
 }
 
-.email-form-container{
-    background-color: #34444C;
+.md-2-mobile{
+    height: 600px;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    background-color: $vicus-secondary-4;
     
+    h1{
+        color: $vicus-primary-5;
+        position: relative;
+        font-size: 90px;
+        margin: 20px;
+        font-family:'Merriweather', serif;
+    }
+
+    p{
+        color:$vicus-primary-2;
+        position: relative;
+        font-size: 25px;
+        height:100px;
+        margin:25px;
+    }
+
+}
+
+.email-form-container{
+    background-color: $vicus-primary-3;
+}
+
+.md3-container{
+    height:600px;
+    width:auto;
+    white-space: pre-wrap;
+    .md3-text{
+        height:200px;
+        background-color: $vicus-primary-3;
+    }
+
+    .md3-footer{
+        height:400px;
+        background-color: $vicus-secondary-4;
+    }
+
+    h1{
+        position: relative;
+        top:90px; left:50px;
+        font-size: 100px;
+        margin:0;
+        color:$vicus-primary-5;
+        
+    }
+
+    p{
+        color:$vicus-primary-2;
+        position: relative;
+        font-size: 25px;
+        top:90px;
+    }
+
 }
 
 

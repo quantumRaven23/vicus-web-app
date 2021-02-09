@@ -6,7 +6,6 @@
  *******************************************/
 //React and Libraries
 import React from 'react';
-// import {useMediaQuery} from 'react-responsive';
 
 //Components
 
@@ -15,12 +14,14 @@ import './header.styles.scss';
 
 //Misc
 import logo from '../../Assets/vicus_logo_alt.png';
+import {useMediaQuery} from 'react-responsive';
 
 const Header =()=>{
-    
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
+
     return(
-        <div className='header'>
-            <a href='/' className='logo-container'>
+        <div className={`header${isTabletOrMobile ? '-mobile':''}`} id='home'>
+            <a href='#home' className='logo-container'>
                 <img alt='Vicus Logo' className='logo' src={logo}/>
             </a>
             <div className='options'>

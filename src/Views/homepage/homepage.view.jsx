@@ -8,32 +8,34 @@
 import React from 'react';
 
 //Components
+import MarkdownTextOne from '../../Components/TextComponents/MarkdownTextOne.component';
+import MarkdownTextTwo from '../../Components/TextComponents/MarkdownTextTwo.component';
 import CardList from '../../Components/CardList/card-list.component';
-import MarkdownText from '../../Components/MarkdownText/markdown-text.component';
+import MarkdownTextThree from '../../Components/TextComponents/MarkdownTextThree.component';
 import EmailForm from '../../Components/EmailForm/email-form.component';
 
 //Styles
 import './homepage.styles.scss'
 
 //Misc
-const HomePage =()=>(
+import {useMediaQuery} from 'react-responsive';
+
+const HomePage =()=>{
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
+
+    return(
     <div className='homepage'>
-        <MarkdownText/>
-        <div  className='motto'>
-            <h1>
-                {"Acentos  \nque hacen el \nproyecto"}
-            </h1>
-            <p>
-                {"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magnaaliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."}
-            </p>
-        </div>
+        <MarkdownTextOne isTabletOrMobile ={isTabletOrMobile}/>
+        <MarkdownTextTwo isTabletOrMobile ={isTabletOrMobile}/>
         <div className='card-list-container'>
             <CardList className='cardlist'/>
         </div>
+        <MarkdownTextThree />
         <div className='email-form-container'>
-            <EmailForm/>
+            <EmailForm isTabletOrMobile ={isTabletOrMobile}/>
         </div>
     </div>
-);
+    );
+};
 
 export default HomePage;

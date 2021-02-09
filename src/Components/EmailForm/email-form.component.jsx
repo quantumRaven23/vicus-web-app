@@ -71,9 +71,9 @@ class EmailForm extends React.Component{
     };
 
     render(){
-
+        const isTabletOrMobile= this.props.isTabletOrMobile;
         return(
-            <div className='email-form' id='tuproyecto'>
+            <div className={`email-form${isTabletOrMobile ? '-mobile':''}`} id='tuproyecto'>
                 <form onSubmit={this.handleSubmit}>
                     <FormInput
                         name='name'

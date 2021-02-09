@@ -36,7 +36,6 @@ class CardList extends React.Component{
     }
 
     handleChange=(e)=>{
-        
         this.setState({'filterCategories':[e.target.value]});
     }
 
@@ -65,7 +64,7 @@ class CardList extends React.Component{
         return(
             <div className='card-list' id='catalogo'>
                 <div className='filter-button-container'>
-                    <CustomButton 
+                    <CustomButton  
                         onClick={this.handleChange} 
                         value=''
                     >
