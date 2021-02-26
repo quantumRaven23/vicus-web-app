@@ -15,11 +15,11 @@ import CustomButton from '../custom-button/custom-button.component';
 //Data
 import ITEM_DATA from './item.data';
 
+
 //Styles
 import './card-list.styles.scss';
 
 //Misc
-
 
 class CardList extends React.Component{
     constructor(props){
@@ -47,7 +47,7 @@ class CardList extends React.Component{
             return items
             .filter((item)=>{
                 for(var i=0;i<filters.length;i++){
-                    if (item.applications.includes(filters[i])){
+                    if (item.applications[filters[i]]===true){
                         continue;
                     }else{
                         return false;
@@ -72,9 +72,39 @@ class CardList extends React.Component{
                     </CustomButton>
                     <CustomButton 
                         onClick={this.handleChange}
-                        value='Cocina'
+                        value='Pulido'
                     >
-                        Cocina
+                        Pulido
+                    </CustomButton>
+                    <CustomButton 
+                        onClick={this.handleChange}
+                        value='Lether'
+                    >
+                        Lether
+                    </CustomButton>
+                    <CustomButton 
+                        onClick={this.handleChange}
+                        value='Natural'
+                    >
+                        Natural
+                    </CustomButton>
+                    <CustomButton 
+                        onClick={this.handleChange}
+                        value='Quarzo'
+                    >
+                        Quarzo
+                    </CustomButton>
+                    <CustomButton 
+                        onClick={this.handleChange}
+                        value='Cocinas'
+                    >
+                        Cocinas
+                    </CustomButton>
+                    <CustomButton 
+                        onClick={this.handleChange}
+                        value='Mesas'
+                    >
+                        Mesas
                     </CustomButton>
                     <CustomButton 
                         onClick={this.handleChange}
@@ -84,21 +114,9 @@ class CardList extends React.Component{
                     </CustomButton>
                     <CustomButton 
                         onClick={this.handleChange}
-                        value='Limpio'
+                        value='Interior'
                     >
-                        Limpio
-                    </CustomButton>
-                    <CustomButton 
-                        onClick={this.handleChange}
-                        value='Barras'
-                    >
-                        Barras
-                    </CustomButton>
-                    <CustomButton 
-                        onClick={this.handleChange}
-                        value='Pulido'
-                    >
-                        Pulido
+                        Interior
                     </CustomButton>
                 </div>
                 <div className='cards-container'>

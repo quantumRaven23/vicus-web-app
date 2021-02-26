@@ -16,19 +16,21 @@ import {MaterialUses} from '../material-uses/material-uses.component';
 
 //Misc
 
-export const Card = ({imageurl,name,description,applications}) =>(
-    <div className='card'>
-        <img className='card-image'
-            alt={name}
-            src={imageurl}
-        />
-        <div className='card-body'>
-            <div className='card-title'>{name}</div>
-            <div className='card-content'>{description}</div>
-        </div>
-        <div className='card-bottom'>
-            <MaterialUses usedFor={applications}/>
-        </div>
+export const Card = ({imageurl,name,description,applications}) =>{
+    return(
+        <div className='card'>
+            <img className='card-image'
+                alt={name}
+                src={`https://firebasestorage.googleapis.com/v0/b/vicus-demo-bb2a5.appspot.com/o/${escape(imageurl)}?alt=media&token=1a5b3697-8847-4fa0-9ade-81b25e611542`}
+            />
+            <div className='card-body'>
+                <div className='card-title'>{name}</div>
+                <div className='card-content'>{description}</div>
+            </div>
+            <div className='card-bottom'>
+                <MaterialUses usedFor={applications}/>
+            </div>
 
-    </div>
-);
+        </div>
+    );
+};

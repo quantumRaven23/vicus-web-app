@@ -29,7 +29,7 @@ $sub-color:#f1f6f8;
         border: 1px solid $sub-color ;
     }
 
-    &:active{
+    &:focus{
         background-color: $sub-color;
         color: black;
         border: 1px solid black ;

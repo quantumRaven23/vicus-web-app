@@ -18,24 +18,20 @@ export const MaterialUses =({usedFor})=>{
 
         <div className='dots'>
             <div className='dot-content'>
-                <span className={`${usedFor[0] ? 'dot-black':'dot-white'}`}></span>
-                <span className='dot-text'>Cocina</span>
+                <span className={`${usedFor['Cocinas'] ? 'dot-black':'dot-white'}`}></span>
+                <span className='dot-text'>Cocinas</span>
             </div>
             <div className='dot-content'>
-                <span className={`${usedFor[1] ? 'dot-black':'dot-white'}`}></span> 
+                <span className={`${usedFor['Mesas'] ? 'dot-black':'dot-white'}`}></span> 
+                <span className='dot-text'>Mesas</span>
+            </div>
+            <div className='dot-content'>
+                <span className={`${usedFor['Exterior'] ? 'dot-black':'dot-white'}`}></span>
                 <span className='dot-text'>Exterior</span>
             </div>
             <div className='dot-content'>
-                <span className={`${usedFor[2] ? 'dot-black':'dot-white'}`}></span>
-                <span className='dot-text'>Limpio</span>
-            </div>
-            <div className='dot-content'>
-                <span className={`${usedFor[3] ? 'dot-black':'dot-white'}`}></span>
-                <span className='dot-text'>Barras</span>
-            </div>
-            <div className='dot-content'>
-                <span className={`${usedFor[4] ? 'dot-black':'dot-white'}`}></span>
-                <span className='dot-text'>Pulido</span>
+                <span className={`${usedFor['Interior'] ? 'dot-black':'dot-white'}`}></span>
+                <span className='dot-text'>Interior</span>
             </div>
         </div>
     );

@@ -1,67 +1,228 @@
 const ITEM_DATA = [
     {
         id:1,
-        imageurl: 'https://picsum.photos/250/250',
-        name:'Andesite',
-        description:'Andesite Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
-        applications:['Cocina','','Limpio','Barras','Pulido']
+        name:'Crystal Sand',
+        imageurl: 'CRYSTAL SAND.jpg',
+        description:'Quarzo pulido estetico y funcional. Bajo mantenimiento y dificil de manchar.',
+        applications:{
+            'Cocinas': true,
+            'Mesas':true,
+            'Exterior': true,
+            'Interior':true,
+            'Pulido': true,
+            'Lether':false,
+            'Natural':false,
+            'Quarzo':true
+        }
     },
     {
         id:2,
-        imageurl: 'https://picsum.photos/250/250',
-        name:'Basalt',
-        description:'Basalt Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
-        applications:['Cocina','','Limpio','Barras','Pulido']
+        name:'Blanco Polar',
+        imageurl: 'POLAR WHITE.jpg',
+        description:'Quarzo pulido estetico y funcional. Bajo mantenimiento y dificil de manchar.',
+        applications:{
+            'Cocinas': true,
+            'Mesas':true,
+            'Exterior': true,
+            'Interior':true,
+            'Pulido': true,
+            'Lether':false,
+            'Natural':false,
+            'Quarzo':true
+        }
     },
     {
         id:3,
-        imageurl: 'https://picsum.photos/250/250',
-        name:'Dacite',
-        description:'Dacite Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
-        applications:['Cocina','','','','Pulido']
+        name:'Black Mirror',
+        imageurl: 'BLACK MIRROR.jpg',
+        description:'Quarzo pulido estetico y funcional. Bajo mantenimiento y dificil de manchar.',
+        applications:{
+            'Cocinas': true,
+            'Mesas':true,
+            'Exterior': true,
+            'Interior':true,
+            'Pulido': true,
+            'Lether':false,
+            'Natural':false,
+            'Quarzo':true
+        }
     },
     {
         id:4,
-        imageurl: 'https://picsum.photos/250/250',
-        name:'Diabase',
-        description:'Diabase Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
-        applications:['','Exterior','Limpio','','Pulido']
+        name:'Crystal Dark Gray',
+        imageurl: 'CRYSTAL DARK GRAY.jpg',
+        description:'Quarzo pulido estetico y funcional. Bajo mantenimiento y dificil de manchar.',
+        applications:{
+            'Cocinas': true,
+            'Mesas':true,
+            'Exterior': true,
+            'Interior':true,
+            'Pulido': true,
+            'Lether':false,
+            'Natural':false,
+            'Quarzo':true
+        }
     },
     {
         id:5,
-        imageurl: 'https://picsum.photos/250/250',
-        name:'Diorite',
-        description:'Diorite Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
-        applications:['','Exterior','','Barras','Pulido']
+        name:'Gris Oxford',
+        imageurl: 'GRIS OXFORD.jpg',
+        description:'Quarzo pulido estetico y funcional. Bajo mantenimiento y dificil de manchar.',
+        applications:{
+            'Cocinas': true,
+            'Mesas':true,
+            'Exterior': true,
+            'Interior':true,
+            'Pulido': true,
+            'Lether':false,
+            'Natural':false,
+            'Quarzo':true
+        }
     },
     {
         id:6,
-        imageurl: 'https://picsum.photos/250/250',
-        name:'Gabbro',
-        description:'Gabbro Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
-        applications:['Cocina','','Limpio','','']
+        name:'White Mirror',
+        imageurl: 'WHITE MIRROR.jpg',
+        description:'Quarzo pulido estetico y funcional. Bajo mantenimiento y dificil de manchar.',
+        applications:{
+            'Cocinas': true,
+            'Mesas':true,
+            'Exterior': true,
+            'Interior':true,
+            'Pulido': true,
+            'Lether':false,
+            'Natural':false,
+            'Quarzo':true
+        }
     },
     {
         id:7,
-        imageurl: 'https://picsum.photos/250/250',
-        name:'Granite',
-        description:'Granite Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
-        applications:['Cocina','Exterior','Limpio','Barras','Pulido']
+        name:'Shadow',
+        imageurl: 'SHADOW.jpg',
+        description:'Quarzo pulido estetico y funcional. Bajo mantenimiento y dificil de manchar.',
+        applications:{
+            'Cocinas': true,
+            'Mesas':true,
+            'Exterior': true,
+            'Interior':true,
+            'Pulido': true,
+            'Lether':false,
+            'Natural':false,
+            'Quarzo':true
+        }
     },
     {
         id:8,
-        imageurl: 'https://picsum.photos/250/250',
-        name:'Obsidian',
-        description:'Obsidian Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
-        applications:['Cocina','Exterior','','Barras','']
+        name:'New Carrara',
+        imageurl: 'NEW CARRARA.jpg',
+        description:'Quarzo pulido estetico y funcional. Bajo mantenimiento y dificil de manchar.',
+        applications:{
+            'Cocinas': true,
+            'Mesas':true,
+            'Exterior': true,
+            'Interior':true,
+            'Pulido': true,
+            'Lether':false,
+            'Natural':false,
+            'Quarzo':true
+        }
     },
     {
         id:9,
-        imageurl: 'https://picsum.photos/250/250',
-        name:'Pegmatite',
-        description:'Pegmatite Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
-        applications:['','Exterior','Limpio','Barras','']
-    }
+        name:'Golden Night',
+        imageurl: 'GOLDEN NIGHT.jpg',
+        description:'Quarzo pulido estetico y funcional. Bajo mantenimiento y dificil de manchar.',
+        applications:{
+            'Cocinas': true,
+            'Mesas':true,
+            'Exterior': true,
+            'Interior':true,
+            'Pulido': true,
+            'Lether':false,
+            'Natural':false,
+            'Quarzo':true
+        }
+    },
+    {
+        id:10,
+        name:'Autumn Brown',
+        imageurl: 'AUTUMN BROWN.jpg',
+        description:'Natural y unico. el granito es de bajo mantenimento. ',
+        applications:{
+            'Cocinas': true,
+            'Mesas':false,
+            'Exterior': false,
+            'Interior':true,
+            'Pulido': true,
+            'Lether':false,
+            'Natural':true,
+            'Quarzo':false
+        }
+    },
+    {
+        id:11,
+        name:'Ubatuva',
+        imageurl: 'UBATUVA.jpg',
+        description:'Natural y unico. el granito es de bajo mantenimento. ',
+        applications:{
+            'Cocinas': true,
+            'Mesas':false,
+            'Exterior': false,
+            'Interior':true,
+            'Pulido': true,
+            'Lether':false,
+            'Natural':true,
+            'Quarzo':false
+        }
+    },
+    {
+        id:12,
+        name:'Caristel',
+        imageurl: 'CRISTEL.jpg',
+        description:'Natural y unico. el granito es de bajo mantenimento. ',
+        applications:{
+            'Cocinas': true,
+            'Mesas':false,
+            'Exterior': false,
+            'Interior':true,
+            'Pulido': true,
+            'Lether':false,
+            'Natural':true,
+            'Quarzo':false
+        }
+    },
+    {
+        id:13,
+        name:'Ornamental',
+        imageurl: 'ORNAMENTAL.jpg',
+        description:'Natural y unico. el granito es de bajo mantenimento. ',
+        applications:{
+            'Cocinas': true,
+            'Mesas':false,
+            'Exterior': false,
+            'Interior':true,
+            'Pulido': true,
+            'Lether':false,
+            'Natural':true,
+            'Quarzo':false
+        }
+    },
+    {
+        id:14,
+        name:'Marmol',
+        imageurl: 'WHITE MIRROR.jpg',
+        description:'Natural y unico. el granito es de bajo mantenimento. ',
+        applications:{
+            'Cocinas': true,
+            'Mesas':false,
+            'Exterior': false,
+            'Interior':true,
+            'Pulido': true,
+            'Lether':true,
+            'Natural':true,
+            'Quarzo':false
+        }
+    },
 ];
 
 export default ITEM_DATA;   
