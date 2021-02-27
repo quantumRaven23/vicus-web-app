@@ -1,0 +1,227 @@
+{"ITEM_DATA":[
+   {
+      "id":"01",
+      "name":"Crystal Sand",
+      "imageurl":"CRYSTAL SAND.jpg",
+      "description":"Quarzo pulido estetico y funcional. Bajo mantenimiento y dificil de manchar.",
+      "applications":{
+         "Cocinas":true,
+         "Mesas":true,
+         "Exterior":true,
+         "Interior":true,
+         "Pulido":true,
+         "Lether":false,
+         "Natural":false,
+         "Quarzo":true
+      }
+   },
+   {
+      "id":"02",
+      "name":"Blanco Polar",
+      "imageurl":"POLAR WHITE.jpg",
+      "description":"Quarzo pulido estetico y funcional. Bajo mantenimiento y dificil de manchar.",
+      "applications":{
+         "Cocinas":true,
+         "Mesas":true,
+         "Exterior":true,
+         "Interior":true,
+         "Pulido":true,
+         "Lether":false,
+         "Natural":false,
+         "Quarzo":true
+      }
+   },
+   {
+      "id":"03",
+      "name":"Black Mirror",
+      "imageurl":"BLACK MIRROR.jpg",
+      "description":"Quarzo pulido estetico y funcional. Bajo mantenimiento y dificil de manchar.",
+      "applications":{
+         "Cocinas":true,
+         "Mesas":true,
+         "Exterior":true,
+         "Interior":true,
+         "Pulido":true,
+         "Lether":false,
+         "Natural":false,
+         "Quarzo":true
+      }
+   },
+   {
+      "id":"04",
+      "name":"Crystal Dark Gray",
+      "imageurl":"CRYSTAL DARK GRAY.jpg",
+      "description":"Quarzo pulido estetico y funcional. Bajo mantenimiento y dificil de manchar.",
+      "applications":{
+         "Cocinas":true,
+         "Mesas":true,
+         "Exterior":true,
+         "Interior":true,
+         "Pulido":true,
+         "Lether":false,
+         "Natural":false,
+         "Quarzo":true
+      }
+   },
+   {
+      "id":"05",
+      "name":"Gris Oxford",
+      "imageurl":"GRIS OXFORD.jpg",
+      "description":"Quarzo pulido estetico y funcional. Bajo mantenimiento y dificil de manchar.",
+      "applications":{
+         "Cocinas":true,
+         "Mesas":true,
+         "Exterior":true,
+         "Interior":true,
+         "Pulido":true,
+         "Lether":false,
+         "Natural":false,
+         "Quarzo":true
+      }
+   },
+   {
+      "id":"06",
+      "name":"White Mirror",
+      "imageurl":"WHITE MIRROR.jpg",
+      "description":"Quarzo pulido estetico y funcional. Bajo mantenimiento y dificil de manchar.",
+      "applications":{
+         "Cocinas":true,
+         "Mesas":true,
+         "Exterior":true,
+         "Interior":true,
+         "Pulido":true,
+         "Lether":false,
+         "Natural":false,
+         "Quarzo":true
+      }
+   },
+   {
+      "id":"07",
+      "name":"Shadow",
+      "imageurl":"SHADOW.jpg",
+      "description":"Quarzo pulido estetico y funcional. Bajo mantenimiento y dificil de manchar.",
+      "applications":{
+         "Cocinas":true,
+         "Mesas":true,
+         "Exterior":true,
+         "Interior":true,
+         "Pulido":true,
+         "Lether":false,
+         "Natural":false,
+         "Quarzo":true
+      }
+   },
+   {
+      "id":"08",
+      "name":"New Carrara",
+      "imageurl":"NEW CARRARA.jpg",
+      "description":"Quarzo pulido estetico y funcional. Bajo mantenimiento y dificil de manchar.",
+      "applications":{
+         "Cocinas":true,
+         "Mesas":true,
+         "Exterior":true,
+         "Interior":true,
+         "Pulido":true,
+         "Lether":false,
+         "Natural":false,
+         "Quarzo":true
+      }
+   },
+   {
+      "id":"09",
+      "name":"Golden Night",
+      "imageurl":"GOLDEN NIGHT.jpg",
+      "description":"Quarzo pulido estetico y funcional. Bajo mantenimiento y dificil de manchar.",
+      "applications":{
+         "Cocinas":true,
+         "Mesas":true,
+         "Exterior":true,
+         "Interior":true,
+         "Pulido":true,
+         "Lether":false,
+         "Natural":false,
+         "Quarzo":true
+      }
+   },
+   {
+      "id":"10",
+      "name":"Autumn Brown",
+      "imageurl":"AUTUMN BROWN.jpg",
+      "description":"Natural y unico. el granito es de bajo mantenimento. ",
+      "applications":{
+         "Cocinas":true,
+         "Mesas":false,
+         "Exterior":false,
+         "Interior":true,
+         "Pulido":true,
+         "Lether":false,
+         "Natural":true,
+         "Quarzo":false
+      }
+   },
+   {
+      "id":"11",
+      "name":"Ubatuva",
+      "imageurl":"UBATUVA.jpg",
+      "description":"Natural y unico. el granito es de bajo mantenimento. ",
+      "applications":{
+         "Cocinas":true,
+         "Mesas":false,
+         "Exterior":false,
+         "Interior":true,
+         "Pulido":true,
+         "Lether":false,
+         "Natural":true,
+         "Quarzo":false
+      }
+   },
+   {
+      "id":"12",
+      "name":"Caristel",
+      "imageurl":"CRISTEL.jpg",
+      "description":"Natural y unico. el granito es de bajo mantenimento. ",
+      "applications":{
+         "Cocinas":true,
+         "Mesas":false,
+         "Exterior":false,
+         "Interior":true,
+         "Pulido":true,
+         "Lether":false,
+         "Natural":true,
+         "Quarzo":false
+      }
+   },
+   {
+      "id":"13",
+      "name":"Ornamental",
+      "imageurl":"ORNAMENTAL.jpg",
+      "description":"Natural y unico. el granito es de bajo mantenimento. ",
+      "applications":{
+         "Cocinas":true,
+         "Mesas":false,
+         "Exterior":false,
+         "Interior":true,
+         "Pulido":true,
+         "Lether":false,
+         "Natural":true,
+         "Quarzo":false
+      }
+   },
+   {
+      "id":"14",
+      "name":"Marmol",
+      "imageurl":"WHITE MIRROR.jpg",
+      "description":"Natural y unico. el granito es de bajo mantenimento. ",
+      "applications":{
+         "Cocinas":true,
+         "Mesas":false,
+         "Exterior":false,
+         "Interior":true,
+         "Pulido":true,
+         "Lether":true,
+         "Natural":true,
+         "Quarzo":false
+      }
+   }
+]
+}

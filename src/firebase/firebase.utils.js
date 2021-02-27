@@ -5,8 +5,7 @@
  *******************************************/
 
 import firebase from 'firebase/app';
-import 'firebase/firestore';
-import 'firebase/storage';
+import 'firebase/database';
 
 var firebaseConfig = {
     apiKey: "AIzaSyDg7EkMhhqJYq3M7ZIrK8iuO_twShk2kAE",
@@ -18,9 +17,16 @@ var firebaseConfig = {
     measurementId: "G-E42FFG2QHY"
 };
 
+
 firebase.initializeApp(firebaseConfig);
 
-export const firestore = firebase.firestore();
-export const storage = firebase.storage();
+export const database = firebase.database();
+
+// export const ITEM_DATA = ()=>{
+//     var dataArr = [];
+//     database.ref("ITEM_DATA").once("value").then((snapshot)=>{
+
+//     });
+// };
 
 export default firebase;

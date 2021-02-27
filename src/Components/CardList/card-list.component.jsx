@@ -14,6 +14,7 @@ import {Card} from '../card/card.component.jsx'
 import CustomButton from '../custom-button/custom-button.component';
 //Data
 import ITEM_DATA from './item.data';
+// import {database} from '../../firebase/firebase.utils';
 
 
 //Styles
@@ -32,7 +33,13 @@ class CardList extends React.Component{
     }
 
     componentDidMount(){
-        console.log()
+        // database.ref("ITEM_DATA").once("value").then((snapshot)=>{
+        //     // snapshot.forEach((childSnapshot)=>{
+        //     //     console.log('value',childSnapshot.val());
+        //     // });
+
+        //     console.log(snapshot.map());
+        // });
     }
 
     handleChange=(e)=>{
