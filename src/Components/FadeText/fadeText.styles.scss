@@ -1,0 +1,108 @@
+/******************************************
+*  Author : quantumRaven23   
+*  Created On : Sun Mar 14 2021
+*  File : fadeText.styles.scss
+*******************************************/
+
+.fade-element{
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    border: solid pink;
+}
+.nofade{
+    position: absolute;
+    font-size: 100px;
+    
+    border: solid blue;
+    color:#fff;
+    font-family:'Merriweather', serif;
+}
+.fade{
+    list-style-type: none;
+    color: #fff;
+    font-family:'Merriweather', serif;
+    h3{
+        position: absolute;
+        font-size: 100px;
+        left:50%;
+        opacity: 0;
+        -webkit-animation: titleAnimation 42s linear infinite 0s;
+        -moz-animation: titleAnimation 42s linear infinite 0s;
+        -o-animation: titleAnimation 42s linear infinite 0s;
+        -ms-animation: titleAnimation 42s linear infinite 0s;
+        animation: titleAnimation 42s linear infinite 0s;
+    }
+
+    li{
+        &:nth-child(1) h3{
+            animation: none;
+            opacity: 1;
+            transform:translateX(-500px)
+        }
+        &:nth-child(3) h3{
+            -webkit-animation-delay: 9s;
+            -moz-animation-delay: 9s;
+            -o-animation-delay: 9s;
+            -ms-animation-delay: 9s;
+            animation-delay: 9s; 
+        }
+
+        &:nth-child(4) h3{
+            -webkit-animation-delay: 18s;
+            -moz-animation-delay: 18s;
+            -o-animation-delay: 18s;
+            -ms-animation-delay: 18s;
+            animation-delay: 18s; 
+        }
+
+        &:nth-child(5) h3{
+            -webkit-animation-delay: 28s;
+            -moz-animation-delay: 28s;
+            -o-animation-delay: 28s;
+            -ms-animation-delay: 28s;
+            animation-delay: 28s; 
+        }
+    }
+}
+
+@-webkit-keyframes titleAnimation { 
+    0% { opacity: 0 }
+    10% { opacity: 1 }
+    20% { opacity: 1 }
+    30% { opacity: 0 }
+    40% {opacity: 0}
+    100% { opacity: 0 }
+}
+@-moz-keyframes titleAnimation { 
+    0% { opacity: 0 }
+    10% { opacity: 1 }
+    20% { opacity: 1 }
+    30% { opacity: 0 }
+    40% {opacity: 0}
+    100% { opacity: 0 }
+}
+@-o-keyframes titleAnimation { 
+    0% { opacity: 0 }
+    10% { opacity: 1 }
+    20% { opacity: 1 }
+    30% { opacity: 0 }
+    40% {opacity: 0}
+    100% { opacity: 0 }
+}
+@-ms-keyframes titleAnimation { 
+    0% { opacity: 0 }
+    10% { opacity: 1 }
+    20% { opacity: 1 }
+    30% { opacity: 0 }
+    40% {opacity: 0}
+    100% { opacity: 0 }
+}
+@keyframes titleAnimation { 
+    0% { opacity: 0 }
+    10% { opacity: 1 }
+    20% { opacity: 1 }
+    30% { opacity: 0 }
+    40% {opacity: 0}
+    100% { opacity: 0 }
+}

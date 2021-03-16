@@ -1,0 +1,56 @@
+a{
+  text-decoration: none;
+  color:black;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  min-width: 700px;
+  font-family: 'Cabin', sans-serif;
+  overflow-x: hidden;
+}
+
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.parallax {
+  min-height: 600px; 
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  animation: slideBg 36s linear infinite 0s;
+  animation-timing-function: ease-in-out;
+  overflow: hidden;
+
+}
+
+
+@keyframes slideBg{
+  0%{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/vicus-demo-bb2a5.appspot.com/o/BG-1.jpg?alt=media&token=1a5b3697-8847-4fa0-9ade-81b25e611542');
+  }
+
+  25%{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/vicus-demo-bb2a5.appspot.com/o/BG-2.jpg?alt=media&token=1a5b3697-8847-4fa0-9ade-81b25e611542');
+  }
+
+  50%{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/vicus-demo-bb2a5.appspot.com/o/BG-3.jpg?alt=media&token=1a5b3697-8847-4fa0-9ade-81b25e611542');
+  }
+
+  75%{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/vicus-demo-bb2a5.appspot.com/o/BG-4.jpg?alt=media&token=1a5b3697-8847-4fa0-9ade-81b25e611542');
+  }
+
+  100%{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/vicus-demo-bb2a5.appspot.com/o/BG-1.jpg?alt=media&token=1a5b3697-8847-4fa0-9ade-81b25e611542');
+  }
+}
+

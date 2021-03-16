@@ -28,6 +28,7 @@ $vicus-secondary-4:#F1f6f8;
     flex-wrap: wrap;
     justify-content: center;
 }
+//Markdown Text 1
 .text-bundle{
     display: flex;
     flex-wrap: wrap;
@@ -38,6 +39,22 @@ $vicus-secondary-4:#F1f6f8;
     height: 300px;
 }
 
+
+.text-item{
+    width:200px;
+    height:auto;
+    align-self: center;
+    p{
+        width: 150px;
+    }
+}
+
+.top-text{
+    position: absolute;
+    margin-top:auto;
+    margin-bottom:200px;
+    font-size: 30px;
+}
 .mobile{
     height: 570px;
     font-size: 20px;
@@ -53,16 +70,8 @@ $vicus-secondary-4:#F1f6f8;
     }
 }
 
-.text-item{
-    width:200px;
-    height:auto;
-    align-self: center;
-    p{
-        width: 150px;
-    }
-}
 
-
+//Markdown Text 2
 .md-2{
     margin: 0%;
     display: grid;
@@ -114,10 +123,12 @@ $vicus-secondary-4:#F1f6f8;
 
 }
 
+//Email form
 .email-form-container{
     background-color: $vicus-primary-3;
 }
 
+//Markdown Text 3
 .md3-container{
     height:600px;
     width:auto;
@@ -144,9 +155,10 @@ $vicus-secondary-4:#F1f6f8;
     p{
         color:$vicus-primary-2;
         position: relative;
-        font-size: 25px;
+        font-size: 50px;
         top:90px;
         margin-left: 20px;
+        font-weight: bold;
     }
 
 }

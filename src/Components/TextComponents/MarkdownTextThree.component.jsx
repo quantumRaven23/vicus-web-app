@@ -22,7 +22,7 @@ const MarkdownTextThree =()=>{
                 </h1>
                 <p>
                     {
-                        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet\ndolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit\nlobortis nisl ut aliquip ex ea commodo consequat.'
+                        'Servicios especiales para arquitectos y proyectos de\ngrandes escalas.'
                     }
                 </p>
             </div>

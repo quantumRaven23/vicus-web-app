@@ -13,34 +13,28 @@ import React from 'react';
 
 const MarkdownTextOne=({isTabletOrMobile})=>{
     return(
-        <div className={`text-bundle ${isTabletOrMobile ? 'mobile':''}`} id='conocenos'>
-            <div className='text-item'>
-                <h3>no hassle</h3>  
-                <p>Lorem ipsum dolor sit
-                    amet, consectetuer
-                    adipiscing elit, sed diam
-                    nonummy nibh</p>
-            </div>
-            <div className='text-item'>
-                <h3>servicio completo</h3>  
-                <p>Lorem ipsum dolor sit
-                    amet, consectetuer
-                    adipiscing elit, sed diam
-                    nonummy nibh</p>
-            </div>
-            <div className='text-item'>
-                <h3>rectificación</h3>  
-                <p>Lorem ipsum dolor sit
-                    amet, consectetuer
-                    adipiscing elit, sed diam
-                    nonummy nibh</p>
-            </div>
-            <div className='text-item'>
-                <h3>instalación</h3>  
-                <p>Lorem ipsum dolor sit
-                    amet, consectetuer
-                    adipiscing elit, sed diam
-                    nonummy nibh</p>
+        <div>
+            <div className={`text-bundle ${isTabletOrMobile ? 'mobile':''}`} id='conocenos'>
+                <h3 className='top-text'>Un lugar, la solucion.</h3>
+                <div className='text-item'>
+                    <h3>Planos/Diseño</h3>  
+                    <p>Con un equipo de expertos 
+                        te ayudamos a diseñar el 
+                        acento perfecto para tu 
+                        proyeco y/o los planos.</p>
+                </div>
+                <div className='text-item'>
+                    <h3>Rectificacion</h3>  
+                    <p>Para que salga todo a la 
+                        primera. Rectificamos 
+                        medidas y otros detalles 
+                        en obra.</p>
+                </div>
+                <div className='text-item'>
+                    <h3>Instalacion</h3>  
+                    <p>Cuidando los detalles, 
+                    limpieza y calidad.</p> 
+                </div>
             </div>
         </div>
     );
