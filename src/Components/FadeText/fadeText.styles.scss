@@ -31,7 +31,7 @@
         -moz-animation: titleAnimation 5s linear infinite 0s;
         -o-animation: titleAnimation 5s linear infinite 0s;
         -ms-animation: titleAnimation 5s linear infinite 0s;
-        animation: titleAnimation 4s linear infinite 0s;
+        animation: titleAnimation 12s linear infinite 0s;
     }
 
     li{
@@ -45,7 +45,7 @@
             -moz-animation-delay: 6s;
             -o-animation-delay: 5s;
             -ms-animation-delay: 5s;
-            animation-delay: 1s;
+            animation-delay: 3s;
             
         }
 
@@ -54,7 +54,7 @@
             // -moz-animation-delay: 10s;
             // -o-animation-delay: 10s;
             // -ms-animation-delay: 10s;
-            animation-delay: 2s; 
+            animation-delay: 6s; 
         }
 
         &:nth-child(5) h3{
@@ -62,7 +62,7 @@
             // -moz-animation-delay: 15s;
             // -o-animation-delay: 15s;
             // -ms-animation-delay: 15s;
-            animation-delay: 3s; 
+            animation-delay: 9s; 
         }
     }
 }
