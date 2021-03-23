@@ -20,7 +20,7 @@ const MarkdownTextTwo=({isTabletOrMobile})=>{
                 {"Acentos  \nque hacen el \nproyecto"}
             </h1>
             <p>
-                {"Los detalles hacen el diseño.\nMateriales de alta calidad para realsar cualquier\ndiseño."}
+                {"Los detalles hacen el diseño.\nMateriales de alta calidad para realizar cualquier\ndiseño."}
             </p>
         </div>
     );

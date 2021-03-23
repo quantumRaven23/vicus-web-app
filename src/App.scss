@@ -31,6 +31,47 @@ html{
 
 }
 
+.bgText{
+  .notTypical{
+    color:#fff;
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    left:50%;
+    transform: translateX(-450px);
+    font-size: 100px;
+  }
+
+  .typical{
+    color:#fff;
+    font-family: 'Inconsolata', monospace;
+    font-size: 100px;
+    position: absolute;
+    left: 50%;
+  }
+
+}
+
+.bgText-mobile{
+
+  .notTypical{
+    color:#F1f6f8;
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    left:30%;
+    font-size: 100px;
+    text-align: center;
+    transform: translateY(-100px);
+  }
+
+  .typical{
+    color:#F1f6f8;
+    font-family: 'Inconsolata', monospace;
+    font-size: 100px;
+    text-align: center;
+    transform: translateY(100px);
+  }
+}
+
 
 @keyframes slideBg{
   0%{

@@ -28,6 +28,7 @@ $vicus-secondary-4:#F1f6f8;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 //Markdown Text 1
 .text-bundle{
     display: flex;
@@ -63,10 +64,17 @@ $vicus-secondary-4:#F1f6f8;
         width:300px;
         height:auto;
         align-self: center;
+        margin-left: 40px;
         p{
             width: 200px;
         }
         
+    }
+
+    .top-text{
+        width:300px;
+        position: absolute;
+        margin-bottom: 500px;
     }
 }
 
