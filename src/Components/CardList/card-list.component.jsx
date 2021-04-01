@@ -87,7 +87,7 @@ class CardList extends React.Component{
                         onClick={this.handleChange}
                         value='Lether'
                     >
-                        Lether
+                        Leather
                     </CustomButton>
                     <CustomButton 
                         onClick={this.handleChange}
@@ -99,7 +99,7 @@ class CardList extends React.Component{
                         onClick={this.handleChange}
                         value='Quarzo'
                     >
-                        Quarzo
+                        Cuarzo
                     </CustomButton>
                     <CustomButton 
                         onClick={this.handleChange}

@@ -59,7 +59,7 @@ $vicus-secondary-4:#F1f6f8;
 .mobile{
     height: 570px;
     font-size: 20px;
-
+    position: relative;
     .text-item{
         width:300px;
         height:auto;
@@ -72,9 +72,10 @@ $vicus-secondary-4:#F1f6f8;
     }
 
     .top-text{
-        width:300px;
+        width:350px;
         position: absolute;
-        margin-bottom: 500px;
+        top:10px;
+        transform: translateX(15px);
     }
 }
 
