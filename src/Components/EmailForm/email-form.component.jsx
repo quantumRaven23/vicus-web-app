@@ -41,7 +41,7 @@ class EmailForm extends React.Component{
             ()=>{
                 console.log('User Pressed Yes')
                 try{
-                    emailjs.sendForm('service_52b54kw', 'template_m9g5uwg', event.target, 'user_F1XYfaRSVMCsu1itKFJzn')
+                    emailjs.sendForm('service_pgtrp78', 'template_m9g5uwg', event.target, 'user_F1XYfaRSVMCsu1itKFJzn')
                     .then((result)=>{
                         result.text==='OK' ? 
                         Notify.Success('Tu correo fue enviado!') 
